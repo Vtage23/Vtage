@@ -7,26 +7,32 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- Header -->
   <header>
     <nav class="navbar">
       <div class="logo">Vtage08</div>
-      <div class="menu-icon" id="menu-icon">&#9776;</div>
-      <ul class="nav-links" id="nav-links">
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">Über uns</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
+      <div class="search-cart">
+        <input type="text" placeholder="Suchen...">
+        <span class="cart-icon">🛒</span>
+      </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Entdecke deinen Stil</h1>
-      <p>Moderne und zeitlose Designs für jeden Anlass.</p>
-      <a href="#shop" class="cta-button">Jetzt shoppen</a>
+      <h1>Willkommen bei Vtage08</h1>
+      <p>Entdecke deine neue Lieblingsmode. Stilvoll. Zeitlos. Bezahlbar.</p>
+      <div class="hero-buttons">
+        <a href="#shop" class="cta-button">Jetzt shoppen</a>
+        <a href="#about" class="secondary-button">Mehr erfahren</a>
+      </div>
     </div>
   </section>
 
@@ -35,48 +41,55 @@
     <h2>Unsere Bestseller</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/300" alt="Produkt 1">
-        <h3>Classic T-Shirt</h3>
-        <p>39,99 €</p>
+        <h3>Produktname 1</h3>
+        <p>Kurzbeschreibung des Produkts.</p>
+        <p class="price">€39,99</p>
         <button class="btn">In den Warenkorb</button>
       </div>
       <div class="product-card">
-        <img src="https://via.placeholder.com/300" alt="Produkt 2">
-        <h3>Hoodie Modern</h3>
-        <p>69,99 €</p>
+        <h3>Produktname 2</h3>
+        <p>Kurzbeschreibung des Produkts.</p>
+        <p class="price">€69,99</p>
+        <button class="btn">In den Warenkorb</button>
+      </div>
+      <div class="product-card">
+        <h3>Produktname 3</h3>
+        <p>Kurzbeschreibung des Produkts.</p>
+        <p class="price">€49,99</p>
         <button class="btn">In den Warenkorb</button>
       </div>
     </div>
   </section>
 
-  <!-- Über uns -->
-  <section id="about" class="about">
-    <h2>Über Vtage08</h2>
-    <p>Vtage08 steht für hochwertige, stilvolle Mode, die mit Leidenschaft und einem Auge für Details entworfen wurde. Entdecke Mode, die zu dir passt.</p>
-  </section>
-
-  <!-- Kontakt -->
-  <section id="contact" class="contact">
-    <h2>Kontakt</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">E-Mail:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Nachricht:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      
-      <button type="submit" class="btn">Absenden</button>
-    </form>
+  <!-- Kundenvertrauen -->
+  <section class="features">
+    <h2>Warum bei uns einkaufen?</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <h3>Kostenloser Versand</h3>
+        <p>Auf alle Bestellungen über 50€.</p>
+      </div>
+      <div class="feature">
+        <h3>14 Tage Rückgaberecht</h3>
+        <p>Kein Risiko beim Einkaufen.</p>
+      </div>
+      <div class="feature">
+        <h3>Sichere Bezahlung</h3>
+        <p>Verschlüsselte Transaktionen für deine Sicherheit.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Vtage08. Alle Rechte vorbehalten.</p>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Datenschutz</a> | 
+        <a href="#">AGB</a> | 
+        <a href="#contact">Kontakt</a>
+      </div>
+      <p>© 2025 Vtage08. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -3,74 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vtage08 - Mode mit Stil</title>
+  <title>Vtage08 - Stilvolle Mode</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <nav>
+    <nav class="navbar">
       <div class="logo">Vtage08</div>
-      <ul class="nav-links">
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
-        <li><a href="#collections">Kollektionen</a></li>
         <li><a href="#about">Über uns</a></li>
         <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Entdecke deinen Stil</h1>
-        <p>Moderne und zeitlose Designs, die dich inspirieren.</p>
-        <a href="#shop" class="cta-button">Jetzt shoppen</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Entdecke deinen Stil</h1>
+      <p>Moderne und zeitlose Designs für jeden Anlass.</p>
+      <a href="#shop" class="cta-button">Jetzt shoppen</a>
+    </div>
+  </section>
+
+  <!-- Produkte -->
+  <section id="shop" class="products">
+    <h2>Unsere Bestseller</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Produkt 1">
+        <h3>Classic T-Shirt</h3>
+        <p>39,99 €</p>
+        <button class="btn">In den Warenkorb</button>
       </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section id="shop" class="highlights">
-      <h2>Unsere Bestseller</h2>
-      <div class="product-grid">
-        <!-- Produktkarte 1 -->
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300" alt="Produkt 1">
-          <h3>Classic T-Shirt</h3>
-          <p>39,99 €</p>
-          <button>In den Warenkorb</button>
-        </div>
-        <!-- Produktkarte 2 -->
-        <div class="product-card">
-          <img src="https://via.placeholder.com/300" alt="Produkt 2">
-          <h3>Hoodie Modern</h3>
-          <p>69,99 €</p>
-          <button>In den Warenkorb</button>
-        </div>
-        <!-- Weitere Produkte -->
-      </div>
-    </section>
-
-    <!-- Über uns -->
-    <section id="about" class="about">
-      <h2>Über Vtage08</h2>
-      <p>
-        Vtage08 steht für hochwertige, stilvolle Mode, die mit Leidenschaft
-        und einem Auge für Details entworfen wurde. Unser Ziel ist es, Mode für alle zugänglich zu machen.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <p>© 2025 Vtage08. Alle Rechte vorbehalten.</p>
-      <div class="social-icons">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Produkt 2">
+        <h3>Hoodie Modern</h3>
+        <p>69,99 €</p>
+        <button class="btn">In den Warenkorb</button>
       </div>
     </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="about" class="about">
+    <h2>Über Vtage08</h2>
+    <p>Vtage08 steht für hochwertige, stilvolle Mode, die mit Leidenschaft und einem Auge für Details entworfen wurde. Entdecke Mode, die zu dir passt.</p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit" class="btn">Absenden</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vtage08. Alle Rechte vorbehalten.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
